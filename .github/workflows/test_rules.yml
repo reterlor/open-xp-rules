@@ -16,4 +16,4 @@ jobs:
         configFile: .devcontainer/devcontainer.json
 
     - name: Verify DevContainer Setup
-      run: "wget https://github.com/vxcontrol/xp-kbt/releases/download/27.0.78/kbt.27.0.78-linux.tar.gz -O /home/vscode/xp-kbt.zip && unzip -o /home/vscode/xp-kbt.zip -d /home/vscode/xp-kbt" # This prints "Hello, World!" inside the DevContainer
+      run: "pwd" # This prints "Hello, World!" inside the DevContainer
