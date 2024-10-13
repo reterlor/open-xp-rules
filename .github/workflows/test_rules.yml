@@ -11,14 +11,9 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Set up Dev Container
-      uses: devcontainers/ci@v0.4.2
+      uses: microsoft/vscode-dev-containers/action@v0
       with:
         devcontainer-path: .devcontainer/devcontainer.json
 
     - name: Verify DevContainer Setup
       run: echo "Hello, World!" # This prints "Hello, World!" inside the DevContainer
-
-    - name: Run tests
-      run: |
-        # This is where you would normally run your tests
-        pytest tests/ --junitxml=test-results.xml
