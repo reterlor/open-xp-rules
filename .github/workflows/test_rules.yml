@@ -13,7 +13,7 @@ jobs:
     - name: Set up Dev Container
       uses: devcontainers/ci@v0.3
       with:
-        devcontainer-path: .devcontainer/devcontainer.json
+        configFile: .devcontainer/devcontainer.json
 
     - name: Verify DevContainer Setup
       run: echo "Hello, World!" # This prints "Hello, World!" inside the DevContainer
