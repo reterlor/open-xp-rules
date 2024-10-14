@@ -19,7 +19,7 @@ jobs:
     - name: Set up environment
       run: |
         sudo apt-get update
-        sudo apt-get install -y wget tar
+        sudo apt-get install -y wget tar git
 
     - name: Download xp-kbt archive
       run: |
@@ -40,7 +40,13 @@ jobs:
       run: |
         mkdir -p /home/runner/xp-kbt/Temp/eXtractionAndProcessing/output/packages
 
-
+    - name: download repository
+      run: |
+        git clone https://github.com/Security-Experts-Community/open-xp-rules.git /home/runner/xp-kbt/open-xp-rules
+        
+    - name: set conf
+      run: |
+        https://pastebin.com/raw/AEyV0Cgn > siemj.conf
 
     - name: Corr rule test
       run: |
