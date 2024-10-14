@@ -43,10 +43,10 @@ jobs:
     - name: download repository
       run: |
         git clone https://github.com/Security-Experts-Community/open-xp-rules.git /home/runner/xp-kbt/open-xp-rules
-        
+
     - name: set conf
       run: |
-        https://pastebin.com/raw/AEyV0Cgn > siemj.conf
+        wget https://pastebin.com/raw/AEyV0Cgn > siemj.conf
 
     - name: Corr rule test
       run: |
