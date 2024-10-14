@@ -39,6 +39,7 @@ jobs:
     - name: Create required directories
       run: |
         mkdir -p /home/runner/xp-kbt/Temp/eXtractionAndProcessing/output/packages
+        mkdir -p /tmp/eXtractionAndProcessing/output/packages
 
     - name: download repository
       run: |
