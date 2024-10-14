@@ -52,3 +52,6 @@ jobs:
     - name: Corr rule test
       run: |
         /home/runner/xp-kbt/extra-tools/siemj/siemj -c siemj.conf main
+    - name: test
+      run: |
+        ls /home/runner/xp-kbt/Temp/eXtractionAndProcessing/output/packages
